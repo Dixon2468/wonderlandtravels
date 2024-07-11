@@ -1,0 +1,254 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #dde0ecdc;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: cyan;
+    background-size: cover;
+}
+body{
+    background-image: url('../Images/wonderlandback.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: rgb(120, 86, 6);
+    color: #f4f7ed;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom: #f50606 10px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #f0ecec;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    font-size: 12px;
+}
+header a:hover {
+    background-color: hsl(34, 94%, 49%);
+}
+.logo img {
+    width: 80px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    display: inline;
+    margin: -10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    margin-top: 5px;
+}
+
+/* Hero section */
+
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: url('../images/wonderlandbackn.jpg') no-repeat center center/cover;
+    height: 600px;
+    color: white;
+}
+
+.hero img {
+    width: 5%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(4, 143, 143, 0.658);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e8491d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #c43815;
+}
+
+.intro {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 30px 1px;
+    text-align: center;
+    height: ;
+}
+
+/* Sections */
+section {
+    padding: 30px 30px;
+    text-align: center;
+    
+}
+
+section h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+/* Trip cards */
+.trip-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    background: rgba(2, 255, 255, 0.664);
+    border: 1px solid chocolate;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.trip-card img {
+    width: 100%;
+    border-radius: 5px;
+    alt: "Image Description";
+}
+
+.trip-card h3 {
+    margin-top: 10px;
+    color: #004080;
+}
+
+.trip-card p {
+    font-size: 16px;
+    color: white;
+}
+
+.trip-card .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.trip-card .btn:hover {
+    background-color: #c43815;
+}
+
+
+/* Hover effect for trip cards */
+.trip-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+    background: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 50px;
+posi;
+       width: 100%;
+       bottom: 0;
+}
+
+footer .social a {
+    margin: 10px 10px;
+    color: rgb(8, 24, 252);
+    text-decoration: none;
+}
+
+footer p {
+    margin: 10px 10 10;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    header ul {
+        padding: 0;
+    }
+
+    header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .trip-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}

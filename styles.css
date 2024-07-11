@@ -1,0 +1,154 @@
+   body {
+       font-family: 'Helvetica Neue', sans-serif ;
+       margin: 0;
+       padding: 0;
+      background-image: url('images/trip.jpg') ;
+       background-size : cover;
+       background-color: white;
+       color: black;
+       line-height: 1.6;
+   }
+
+   header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       background-color: rgba(120, 86, 6);
+       color: #300dcc;
+       padding: 10px 20px;
+       border-bottom: #f50606 10px solid
+   }
+
+   .logo img {
+       width: 80px;
+   }
+
+   nav ul {
+       list-style-type: none;
+       padding: 0;
+       margin: 0;
+       display: flex;
+   }
+
+   nav ul li {
+       margin-right: 20px;
+   }
+
+   nav ul li a {
+       color: #fff;
+       text-decoration: none;
+       padding: 10px 10px;
+       transition: background-color 0.3s;
+       font-size: 12px;
+       text-transform: uppercase;
+}
+
+   nav ul li a:hover {
+       background-color: hsl(34, 94%, 49%);
+   }
+
+   .hero {
+       position: relative;
+       text-align: center;
+       color: white;
+   }
+
+   .hero img {
+       width: 100%;
+       height: auto;
+   }
+
+   .hero-text {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       background-color: rgba(0, 0, 0, 0.5);
+       padding: 20px;
+       border-radius: 10px;
+   }
+
+   .cta {
+       display: inline-block;
+       padding: 10px 20px;
+       background-color: #e8491d;
+       color: white;
+       text-decoration: none;
+       border-radius: 5px;
+       margin-top: 10px;
+       transition: background-color 0.3s;
+   }
+
+   .cta:hover {
+       background-color: #c43815;
+   }
+
+   .intro {
+       padding: 20px;
+       background-color: white;
+       border-radius: 10px;
+       margin: 20px;
+       text-align: center;
+   }
+
+   trip-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.trip-card img {
+    width: 100%;
+    border-radius: 10px;
+    alt: "Image Description";
+}
+
+.trip-card h3 {
+    margin-top: 10px;
+    color: #004080;
+}
+
+.trip-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.trip-card .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Hover effect for trip cards */
+.trip-card:hover {
+    transform: scale(1.05);
+}
+
+
+   footer {
+       background-color: #004080;
+       color: #fff;
+       text-align: center;
+       padding: 10px 0;
+       position: fixed;
+       width: 100%;
+       bottom: 0;
+   }
+   footer .social a {
+    margin: 10px 10px;
+    color: #f30909;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 10px 0 0;
+}
